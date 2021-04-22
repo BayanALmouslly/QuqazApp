@@ -1,0 +1,96 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h1>إضافة طلب</h1>
+            <h3>Start designing your landing page here.</h3>
+            <br />
+            <button type="button" class="btn btn-outline-neutral btn-round">العودة للواجهة الرئيسية</button>
+        </div>
+    </div>
+</div>
+<div class="main">
+
+
+
+
+    <div class="section landing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto" style="direction: rtl;text-align: right;">
+                    <h2 class="text-center">إضافة طلب</h2>
+                    <form class="contact-form">
+                        <h5>رقم الوصل</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>اسم المستلم</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>عنوان المستلم</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>المنطقة</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>رقم هاتف اول</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>النوع</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>العدد</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                    
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-md-4 mr-auto ml-auto">
+                                <button class="btn btn-danger btn-lg btn-fill">إضافة</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

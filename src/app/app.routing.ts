@@ -8,6 +8,8 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { AddOrderComponent } from './order/add-order/add-order.component';
+import { ShowOrdersComponent } from './order/show-orders/show-orders.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +18,16 @@ const routes: Routes =[
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    {
+      path: 'order',
+      loadChildren: () => import('./order/order.module')
+        .then(m => m.OrderModule),
+    },
+    // { path: 'addorder',      component: AddOrderComponent },
+    // { path: 'showorder',      component: ShowOrdersComponent },
+
+
 ];
 
 @NgModule({
