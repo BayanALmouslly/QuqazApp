@@ -15,4 +15,7 @@ export class OrderComponent implements OnInit {
 showOrder(){
 this.router.navigate(['/order/showorder'])
 }
+addOrder(){
+  this.router.navigate(['/order/add'])
+}
 }
