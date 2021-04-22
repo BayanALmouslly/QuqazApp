@@ -15,6 +15,7 @@ const routes: Routes =[
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 
