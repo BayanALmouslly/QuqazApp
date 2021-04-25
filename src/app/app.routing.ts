@@ -12,7 +12,7 @@ import { AddOrderComponent } from './order/add-order/add-order.component';
 import { ShowOrdersComponent } from './order/show-orders/show-orders.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'signup', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },

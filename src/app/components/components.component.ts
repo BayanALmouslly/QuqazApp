@@ -8,7 +8,8 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     ngb-progressbar {
         margin-top: 5rem;
     }
-    `]
+    `],
+    styleUrls: ['./components.component.scss']
 })
 
 export class ComponentsComponent implements OnInit {

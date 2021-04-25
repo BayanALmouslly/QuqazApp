@@ -1847,7 +1847,7 @@ textarea.form-control {
 .section-image hr,
 .section-gold hr,
 .section-dark hr {
-  border-color: rgba(255, 255, 255, 0.19);
+  border-color: rgb(36, 35, 35);
 }
 
 .page-header .title,

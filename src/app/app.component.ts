@@ -27,14 +27,14 @@ export class AppComponent implements OnInit {
             this.navbar.sidebarClose();
         });
         this.renderer.listen('window', 'scroll', (event) => {
-            const number = window.scrollY;
-            if (number > 150 || window.pageYOffset > 150) {
-                // add logic
-                navbar.classList.remove('navbar-transparent');
-            } else {
-                // remove logic
-                navbar.classList.add('navbar-transparent');
-            }
+            // const number = window.scrollY;
+            // if (number > 150 || window.pageYOffset > 150) {
+            //     // add logic
+            //     navbar.classList.remove('navbar-transparent');
+            // } else {
+            //     // remove logic
+            //     navbar.classList.add('navbar-transparent');
+            // }
         });
         var ua = window.navigator.userAgent;
         var trident = ua.indexOf('Trident/');
@@ -58,6 +58,20 @@ export class AppComponent implements OnInit {
         }
         else {
             return true;
+        }
+    }
+    
+  
+    issignup(){
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+      if(titlee.charAt(0) === '#'){
+          titlee = titlee.slice( 1 );
+      }
+        if( titlee === '/signup' ) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 }
